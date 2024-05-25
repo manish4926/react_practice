@@ -1,0 +1,27 @@
+.calculatorFrame {
+    background-color: #f0f0f0;
+    text-align: center;
+    border:solid 1px #ccc;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+}
+
+.calculatorFrame .inputFrame {
+    font-size: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.calculatorFrame .Buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.calculatorFrame .Buttons button {
+    width: 45px;
+    height: 45px;
+    margin:5px;
+    background-color: #ccc;
+
+}

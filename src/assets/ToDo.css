@@ -1,0 +1,10 @@
+.todoProject {
+    background-color: yellowgreen;
+    padding: 20px 0;
+}
+
+
+.todoProject .btn-warning{
+    background-color: gold;
+    min-width: 100px;
+}
