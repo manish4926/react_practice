@@ -15,6 +15,11 @@ import "./assets/BharatClock.css";
 //---------------
 import Calculator from './components/Calculator/Calculator';
 
+
+//---------------
+import ChildrenExample from './components/ChildrenExample';
+
+
 // -----------------------
 import { toDoitems } from './assets/DataSets';
 
@@ -35,14 +40,19 @@ function App() {
       <ListItems toDoList={toDoitems}></ListItems>
     </div>
 
-    <div className='bharatClock'>
+    <div className='bharatClock col'>
       <ClockHeading></ClockHeading>
       <ClockSlogan></ClockSlogan>
       <ClockTimer></ClockTimer>
     </div>
 
     <Calculator></Calculator>
-    
+    <ChildrenExample>
+      <p>Hello Child Example. Here We Can Use Any Content Under Parent</p>
+    </ChildrenExample>
+    <ChildrenExample>
+      <h2>Hello Child Example. Here We Can Use Any Content Under Parent</h2>
+    </ChildrenExample>
     
     </>
   );
