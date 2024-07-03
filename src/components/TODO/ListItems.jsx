@@ -1,4 +1,4 @@
-import "./ListItem.module.css";
+import styles from "./ListItem.module.css";
 
 let ListItems = ({toDoList}) => {
   return (
@@ -11,13 +11,13 @@ let ListItems = ({toDoList}) => {
               <div className="row" key={item[0]}>
               <div  className="row" >
                 <div className="col-5 pb-4">
-                  <div className="fw-bold {{item-name}}">{item[0]}</div>
+                  <div className={`fw-bold ${styles.itemName}`}>{item[0]}</div>
                 </div>
                 <div className="col-5">
                   <div className="fw-normal">{item[1]}</div>
                 </div>
                 <div className="col-2">
-                  <button className="btn btn-danger">Delete</button>
+                  <button className="btn btn-danger" onClick={ () => { console.log(` ${item[0]} deleted`)}}>Delete</button>
                 </div>
                 </div>
               </div>

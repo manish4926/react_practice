@@ -8,4 +8,10 @@ const toDoitems =  [
 
 //const toDoitems = [];
 
-export {toDoitems};
+const foodItems = [
+  "Salt",
+  "Sugar",
+  "Lal Mirch"
+];
+
+export {toDoitems, foodItems};

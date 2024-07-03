@@ -2,7 +2,7 @@ import styles from "./Calculator.module.css";
 
 const Buttons = ({buttonContailer}) => {
 
-    console.log(buttonContailer);
+    //console.log(buttonContailer);
   return (
     <div className={styles.Buttons}>
         {buttonContailer.map((buttonName) => (
