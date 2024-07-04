@@ -39,10 +39,10 @@ function App() {
 
   return (
     <>
-    <div className='text-center'>
+    {/* <div className='text-center'>
       <h2>Hello World</h2>
       <HelloMessage></HelloMessage>
-    </div>
+    </div> */}
 
     {/* ----------------------GROSSARY-------------------- */}
     <hr></hr>
@@ -50,7 +50,7 @@ function App() {
 
 
     <hr></hr>
-    <div className='todoProject'>
+    {/* <div className='todoProject'>
       <TODOHeading></TODOHeading>
       <AddItem></AddItem>
       <ListItems toDoList={toDoitems}></ListItems>
@@ -68,7 +68,7 @@ function App() {
     </ChildrenExample>
     <ChildrenExample>
       <h2>Hello Child Example. Here We Can Use Any Content Under Parent</h2>
-    </ChildrenExample>
+    </ChildrenExample> */}
     
     </>
   );

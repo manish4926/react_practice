@@ -4,13 +4,15 @@ const ListItems = ({foodItems}) => {
     return (
         <>
             <div className="list pb-10">
-            {foodItems.map((item,key) => (
+                <ul className="list-group">
+                {foodItems.map((item,key) => (
+                    
+                    <li className="list-group-item" key={key}>
+                        <span>{item}</span>
+                    </li>
                 
-                <div key={key}>
-                    <span>{item}</span>
-                </div>
-               
-            ))}
+                ))}
+                </ul>
             </div>
         </>
     );
