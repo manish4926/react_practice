@@ -1,7 +1,7 @@
-import {HeaderChild} from '../Children/HeaderChild';
-import AddGrossary from './../Grossary/AddGrossary';
-import ListItems from './../Grossary/ListItems';
-import ErrorMessage from '../Core/ErrorMessage';
+import {HeaderChild} from '../../Children/HeaderChild';
+import AddGrossary from './AddGrossary';
+import ListItems from './ListItems';
+import ErrorMessage from '../../Core/ErrorMessage';
 import { useState } from 'react';
 
 
