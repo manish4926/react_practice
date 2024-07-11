@@ -51,5 +51,18 @@
 }
 
 .parentHeader {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  box-shadow: 0px 5px 10px #ddd;
+  border-bottom: solid 1px #ddd;
+}
+
+.parentHeader .icon i{
+  color: #222;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.parentHeader .icon span {
+  font-size: 20px;
+  text-transform: uppercase;
 }

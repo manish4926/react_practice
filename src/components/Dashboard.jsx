@@ -1,6 +1,9 @@
 const Dashboard = () => {
     return (
-        <>Hi Dashboard</>
+        <>
+            <>Hi Dashboard</>
+            <p>List of all the projects will be visible in this page.</p>
+        </>
     );
 }
 

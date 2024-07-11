@@ -3,10 +3,8 @@
 
 import HelloMessage from 'components/Practice/HelloMessage';
 // --------------
-import TODOHeading from 'components/Practice/TODO/ToDoHeading';
-import ListItems from 'components/Practice/TODO/ListItems';
-import AddItem from 'components/Practice/TODO/AddItem';
-import './../../assets/ToDo.css';
+import TODO from 'components/Practice/TODO/Home';
+
 
 // -------------
 import ClockHeading from 'components/Practice/BharatClock/ClockHeading';
@@ -31,8 +29,13 @@ import ChildrenExample from 'components/Practice/ChildrenExample';
 import { toDoitems, foodItems } from 'assets/DataSets';
 
 
+
+
 const Home = (props) => {
     //console.log(props);
+
+    
+
     return (
         <>
         <div className='text-center'>
@@ -45,11 +48,8 @@ const Home = (props) => {
         <GrossaryContainer foodItems={foodItems}></GrossaryContainer>
 
         <hr></hr>
-        <div className='todoProject'>
-        <TODOHeading></TODOHeading>
-        <AddItem></AddItem>
-        <ListItems toDoList={toDoitems}></ListItems>
-        </div>
+        <TODO toDoitems={toDoitems}></TODO>
+        
 
         <div className='bharatClock col'>
         <ClockHeading></ClockHeading>

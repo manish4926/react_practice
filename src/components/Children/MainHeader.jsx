@@ -3,11 +3,14 @@ const MainHeader = (props) => {
     <>
         <div className="container-fluid-2 parentHeader">
             <div className="row">
-                <div className="col">
-                    Icon
+                <div className="col-2">
+                    <div className="icon">
+                        <i className="fa fa-th"></i>
+                        <span>Manish Practice</span>
+                    </div>
                 </div>
-                <div className="col">
-                    <h3>Main Header</h3>
+                <div className="col-10">
+                    
                         
                 </div>
             </div>
