@@ -1,7 +1,7 @@
-import { useState, useRef } from 'react';
-import TODOHeading from 'components/Practice/TODO/ToDoHeading';
-import ListItems from 'components/Practice/TODO/ListItems';
-import AddItem from 'components/Practice/TODO/AddItem';
+import { useState } from 'react';
+import TODOHeading from 'components/Practice/TODOUseState/ToDoHeading';
+import ListItems from 'components/Practice/TODOUseState/ListItems';
+import AddItem from 'components/Practice/TODOUseState/AddItem';
 import ErrorMessage from 'components/Core/ErrorMessage';
 import 'assets/ToDo.css';
 
@@ -15,9 +15,10 @@ const Home = ({toDoitems}) => {
 
     const addNewItem = () =>  {
         if(task === "" || dueDate === "") {
-        alert('Invalid Value');
+            console.log(task,dueDate);
+            alert('Invalid Value');
         } else {
-            let newItemsArr = [...toDoitems,[task.current, dueDate.current]];
+            let newItemsArr = [...newItem,[task, dueDate]];
             setNewItem(newItemsArr);
         }
     }
@@ -35,7 +36,7 @@ const Home = ({toDoitems}) => {
         <>
         <div className='todoProject'>
         <TODOHeading></TODOHeading>
-        <AddItem addNewItem={addNewItem} addTaskName={dueDate} addDueDate={dueDate}></AddItem>
+        <AddItem addNewItem={addNewItem} addTaskName={addTaskName} addDueDate={addDueDate}></AddItem>
         <ErrorMessage listItem={newItem} message="No Task for Today! Enjoy the Day"></ErrorMessage>
         <ListItems toDoList={newItem}></ListItems>
         </div>

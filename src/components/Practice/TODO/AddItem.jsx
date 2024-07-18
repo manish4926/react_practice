@@ -9,11 +9,11 @@ let AddItem = ({addNewItem, addTaskName, addDueDate}) => {
       <div className="container">
         <div className="row">
           <div className="col-5">
-            <input type="text" className="form-control" name="taskName" placeholder="Name" ref={addTaskName}></input>
+            <input type="text" className="form-control" name="taskName" placeholder="Name" ref="taskName"></input>
 
           </div>
           <div className="col-5">
-          <input type="date" className="form-control" name="date" placeholder="Date On" ref={addDueDate}></input>
+          <input type="date" className="form-control" name="date" placeholder="Date On" ref="date"></input>
           </div>
           <div className="col-2">
             <button type="submit" className="btn btn-warning" onClick={addNewItem}>Add Item</button>

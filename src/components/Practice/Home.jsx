@@ -3,7 +3,10 @@
 
 import HelloMessage from 'components/Practice/HelloMessage';
 // --------------
-import TODO from 'components/Practice/TODO/Home';
+import TODOUseRef from 'components/Practice/TODO/Home';
+
+// --------------
+import TODOUseState from 'components/Practice/TODOUseState/Home';
 
 
 // -------------
@@ -48,7 +51,9 @@ const Home = (props) => {
         <GrossaryContainer foodItems={foodItems}></GrossaryContainer>
 
         <hr></hr>
-        <TODO toDoitems={toDoitems}></TODO>
+        <TODOUseState toDoitems={toDoitems}></TODOUseState>
+        {/* <TODOUseRef toDoitems={toDoitems}></TODOUseRef> */}
+
         
 
         <div className='bharatClock col'>
