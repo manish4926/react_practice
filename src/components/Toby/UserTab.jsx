@@ -2,7 +2,9 @@
 const UserTab = () => {
     return (
         <>
-        User Tab</>
+            User Tab
+            <img src="" className="img-round" alt="User Profile"/>
+        </>
     )
 }
 
