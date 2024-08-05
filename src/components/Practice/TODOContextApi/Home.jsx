@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import TODOHeading from 'components/Practice/TODO/ToDoHeading';
-import ListItems from 'components/Practice/TODO/ListItems';
-import AddItem from 'components/Practice/TODO/AddItem';
+import TODOHeading from 'components/Practice/TODOContextApi/ToDoHeading';
+import ListItems from 'components/Practice/TODOContextApi/ListItems';
+import AddItem from 'components/Practice/TODOContextApi/AddItem';
 import ErrorMessage from 'components/Core/ErrorMessage';
 import 'assets/ToDo.css';
 
@@ -25,7 +25,7 @@ const Home = ({toDoitems}) => {
 
     return (
         <>
-        <div className='todoProject'>
+        <div className='todoProject style2' >
         <TODOHeading></TODOHeading>
         <AddItem addNewItem={addNewItem}></AddItem>
         <ErrorMessage listItem={newItem} message="No Task for Today! Enjoy the Day"></ErrorMessage>

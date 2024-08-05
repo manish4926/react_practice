@@ -8,6 +8,9 @@ import TODOUseRef from 'components/Practice/TODO/Home';
 // --------------
 import TODOUseState from 'components/Practice/TODOUseState/Home';
 
+// --------------
+import TODOUseContext from 'components/Practice/TODOContextApi/Home';
+
 
 // -------------
 import ClockHeading from 'components/Practice/BharatClock/ClockHeading';
@@ -51,8 +54,23 @@ const Home = (props) => {
         <GrossaryContainer foodItems={foodItems}></GrossaryContainer>
 
         <hr></hr>
-        <TODOUseState toDoitems={toDoitems}></TODOUseState>
-        {/* <TODOUseRef toDoitems={toDoitems}></TODOUseRef> */}
+        <div className='container-fluid'>
+            <div className='row'>
+                <div className='col'>
+                    <TODOUseContext toDoitems={toDoitems}></TODOUseContext> 
+                </div>
+            </div>
+            <div className='row'>
+            
+                <div className='col'>
+                    <TODOUseState toDoitems={toDoitems}></TODOUseState> 
+                </div>
+                <div className='col'>
+                    <TODOUseRef toDoitems={toDoitems}></TODOUseRef>
+                </div>
+            </div>
+        </div>
+        
 
         
 

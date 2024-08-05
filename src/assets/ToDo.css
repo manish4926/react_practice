@@ -3,6 +3,15 @@
     padding: 20px 0;
 }
 
+.todoProject.style2 {
+    background-color: darkorange;
+    color: white;
+}
+
+.todoProject.style2 a{
+    color: darkorange;
+}
+
 
 .todoProject .btn-warning{
     background-color: gold;
