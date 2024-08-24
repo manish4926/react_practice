@@ -19,7 +19,7 @@ import Dashboard from 'components/Dashboard';
 //------
 //-----------
 function App() {
-  let componentType = 'Practice';
+  let componentType = 'SocialMedia';
   let ComponentToRender = null;
   switch (componentType) {
     case 'Dashboard':

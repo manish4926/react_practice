@@ -1,6 +1,9 @@
-import { useRef } from 'react';
+import { useRef, useContext } from 'react';
+import { DataContext } from 'components/Practice/TODOContextApi/DataContext';
 
-let AddItem = ({addNewItem}) => {
+let AddItem = () => {
+
+  const { newToDoContextItem, setToDoContextItem } = useContext(DataContext);
 
   const taskElement = useRef();
   const dueDateElement = useRef();
@@ -9,6 +12,15 @@ let AddItem = ({addNewItem}) => {
     event.preventDefault();
     addNewItem(taskElement.current.value, dueDateElement.current.value);
   }
+
+  const addNewItem = (task, dueDate) =>  {
+    if(task === "" || dueDate === "") {
+    alert('Invalid Value');
+    } else {
+        let newItemsArr = [...newToDoContextItem,[task, dueDate]];
+        setToDoContextItem(newItemsArr);
+    }
+}
 
   return (
     <div className="bh-add-item pb-4">

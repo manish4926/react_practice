@@ -1,12 +1,15 @@
 import styles from "./ListItem.module.css";
+import { useContext } from 'react';
+import { DataContext } from 'components/Practice/TODOContextApi/DataContext';
 
-let ListItems = ({toDoList}) => {
+let ListItems = () => {
+  const { newToDoContextItem } = useContext(DataContext);
   return (
     <>
       <div className="bh-item-list pb-2">
         <div className="container">
           <div className="row">
-            {toDoList.map((item) => (
+            {newToDoContextItem.map((item) => (
               <div className="row" key={item[0]}>
               <div  className="row" >
                 <div className="col-5 pb-4">
