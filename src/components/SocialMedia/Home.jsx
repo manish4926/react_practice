@@ -12,6 +12,7 @@ const Home = (props) => {
             </div>
             <div className='col-md-10 g-0'>
                 <Header></Header>
+                <Content></Content>
                 <Footer></Footer>
             </div>
             </div>
