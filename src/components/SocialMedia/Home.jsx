@@ -2,6 +2,7 @@ import Header from 'components/SocialMedia/Components/Header';
 import Footer from 'components/SocialMedia/Components/Footer';
 import Sidebar from 'components/SocialMedia/Components/Sidebar';
 import 'components/SocialMedia/style.css';
+import Content from 'components/SocialMedia/Components/Content';
 
 const Home = (props) => {
     return (
